@@ -15,8 +15,6 @@ require("lazy").setup({
   "folke/which-key.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
- -- "vim-airline/vim-airline",
- -- "vim-airline/vim-airline-themes",
   "sheerun/vim-polyglot",
   "ap/vim-css-color",
   {'nvim-lualine/lualine.nvim',

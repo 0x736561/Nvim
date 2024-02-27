@@ -1,9 +1,3 @@
-
--- airline --
-vim.cmd([[
-  let g:airline#extensions#tabline#enabled = 1
-]])
-
 -- variáveis --
 vim.cmd([[
     set nocompatible
@@ -37,3 +31,4 @@ vim.cmd([[
       \zaibatsu.vim
 	colorscheme gruvbox
 ]])
+
