@@ -23,15 +23,19 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim",
     "lewis6991/gitsigns.nvim",
     "tpope/vim-fugitive",
-    { 'nvim-lualine/lualine.nvim',
-      dependencies = { 'nvim-tree/nvim-web-devicons' }},
+    "zaldih/themery.nvim",
+    { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
     { 'nvimdev/dashboard-nvim',
       event = 'VimEnter',
       config = function()
         require('dashboard').setup{}
       end,
       dependencies = { { 'nvim-tree/nvim-web-devicons' }}},
-    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+
+    -- Temas --
     { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
+    { "catppuccin/nvim", name = "catppuccin" },
     "neanias/everforest-nvim",    
+    "navarasu/onedark.nvim",
 })

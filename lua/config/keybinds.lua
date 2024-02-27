@@ -7,8 +7,6 @@ wk.register({
     c = {"<cmd>bdel<cr>", "Fechar buffer"},
     v = {"<cmd>vs<cr>", "Split vertical"},
     m = {"<cmd>sp<cr>", "Split horizontal"},
-    f = { "<cmd>Telescope find_files<cr>", "Encontrar arquivos" },
-    b = {"<cmd>Telescope buffers<cr>", "Lista de buffers"},
     n = {"<cmd>Vexplore<cr>", "Explorador de arquivos"},
     s = {"<cmd>write<cr>", "Salvar"},
     q = {"<cmd>quit<cr>", "Fechar janela"},
@@ -16,6 +14,9 @@ wk.register({
     j = {"<c-w>j", "Janela abaixo"},
     k = {"<c-w>k", "Janela acima"},
     l = {"<c-w>l", "Janela à direita"},
+    f = { "<cmd>Telescope find_files<cr>", "Encontrar arquivos" },
+    b = {"<cmd>Telescope buffers<cr>", "Lista de buffers"},
+    t = {"<cmd>Themery<cr>", "Temas"},
     g = {
         name = "Git",
         p = {"<cmd>Gitsigns preview_hunk<cr>", "Preview Hunk"},
