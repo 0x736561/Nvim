@@ -14,6 +14,7 @@ require("lazy").setup({
     
     ---- Vimscript ---- 
     "sheerun/vim-polyglot",
+    "tpope/vim-fugitive",
     "ap/vim-css-color",
 
     ---- Lua ----
@@ -22,7 +23,6 @@ require("lazy").setup({
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
     "lewis6991/gitsigns.nvim",
-    "tpope/vim-fugitive",
     "zaldih/themery.nvim",
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
