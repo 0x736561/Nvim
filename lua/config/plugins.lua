@@ -15,10 +15,14 @@ require("lazy").setup({
   "folke/which-key.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
-  "vim-airline/vim-airline",
-  "vim-airline/vim-airline-themes",
+ -- "vim-airline/vim-airline",
+ -- "vim-airline/vim-airline-themes",
   "sheerun/vim-polyglot",
   "ap/vim-css-color",
+  {'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+
     -- colorschemes --
   "morhetz/gruvbox",
   "sainnhe/vim-color-forest-night",
