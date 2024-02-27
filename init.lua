@@ -11,26 +11,32 @@ vim.cmd([[
 ]])
 vim.cmd([[
     set wildignore+=blue.vim,darkblue.vim,default.vim,delek.vim,desert.vim,
-      \elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,murphy.vim,
-      \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,zellner.vim,
-      \habamax.vim,lunaperche.vim,quiet.vim,retrobox.vim,sorbet.vim,wildcharm.vim,
-      \zaibatsu.vim
+      \elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,
+      \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,
+      \zellner.vim,habamax.vim,lunaperche.vim,quiet.vim,retrobox.vim,
+      \sorbet.vim,wildcharm.vim,zaibatsu.vim,murphy.vim,
 ]])
 
 -- Lua --
 -- Sane defaults --
-vim.o.relativenumber  =   true
-vim.o.cursorline      =   true
-vim.o.hlsearch        =   true
-vim.o.ignorecase      =   true
-vim.o.smartcase       =   true
-vim.o.tabstop         =   4
-vim.o.softtabstop     =   4
-vim.o.shiftwidth      =   4
-vim.o.textwidth       =   79
-vim.o.expandtab       =   true
-vim.o.autoindent      =   true
-vim.o.showmatch       =   true
-vim.o.mat             =   2
-vim.o.hidden          =   true
-vim.o.termguicolors   =   true
+vim.o.number        =   true
+vim.o.cursorline    =   true
+vim.o.hlsearch      =   true
+vim.o.ignorecase    =   true
+vim.o.smartcase     =   true
+vim.o.tabstop       =   4
+vim.o.softtabstop   =   4
+vim.o.shiftwidth    =   4
+vim.o.textwidth     =   79
+vim.o.expandtab     =   true
+vim.o.autoindent    =   true
+vim.o.showmatch     =   true
+vim.o.mat           =   2
+vim.o.hidden        =   true
+vim.o.termguicolors =   true
+vim.o.splitright    =   true
+vim.o.splitbellow   =   true
+vim.o.signcolumn    =   "yes"
+vim.o.clipboard     =   "unnamed,unnamedplus"
+vim.o.scrolloff     =   8
+vim.o.colorcolumn   =   "80"

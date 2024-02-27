@@ -1,4 +1,9 @@
 require('lualine').setup()
+require("bufferline").setup()
+require("gitsigns").setup()
+require("dashboard").setup {
+    shortcut_type = "number"
+}
 require'netrw'.setup {
   icons = {
     symlink = '',
@@ -7,8 +12,6 @@ require'netrw'.setup {
   },
   use_devicons = true,
 }
-require("bufferline").setup()
-require("gitsigns").setup()
 require("themery").setup({
     themes = {
     {
