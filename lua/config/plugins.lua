@@ -21,6 +21,8 @@ require("lazy").setup({
     "folke/which-key.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
+    "lewis6991/gitsigns.nvim",
+    "tpope/vim-fugitive",
     { 'nvim-lualine/lualine.nvim',
       dependencies = { 'nvim-tree/nvim-web-devicons' }},
     { 'nvimdev/dashboard-nvim',
