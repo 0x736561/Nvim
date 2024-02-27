@@ -7,7 +7,7 @@ vim.cmd([[
 -- variáveis --
 vim.cmd([[
     set nocompatible
-	set number
+	set relativenumber
     set cursorline
     set hlsearch
     set ignorecase
