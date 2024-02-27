@@ -45,14 +45,10 @@ require("lazy").setup({
 
     -- Temas --
     { 
-        "ellisonleao/gruvbox.nvim", 
-        priority = 1000, 
-        config = true 
-    },
-    { 
         "catppuccin/nvim", 
         name = "catppuccin" 
     },
+    "ellisonleao/gruvbox.nvim", 
     "neanias/everforest-nvim",    
     "navarasu/onedark.nvim",
 })

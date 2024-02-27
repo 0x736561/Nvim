@@ -1,15 +1,13 @@
-require("config.plugins")
-require("config.keybinds")
-require("config.startup")
-require("config.theme")
+require("plugins")
+require("keybinds")
+require("config")
+require("theme")
 
 -- Vimscript --
 vim.cmd([[
     let g:netrw_banner = 0
     let g:netrw_browse_split = 4
     let g:netrw_winsize = 20
-]])
-vim.cmd([[
     set wildignore+=blue.vim,darkblue.vim,default.vim,delek.vim,desert.vim,
       \elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,
       \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,
@@ -18,25 +16,29 @@ vim.cmd([[
 ]])
 
 -- Lua --
--- Sane defaults --
+-- booleans --
 vim.o.number        =   true
 vim.o.cursorline    =   true
 vim.o.hlsearch      =   true
 vim.o.ignorecase    =   true
 vim.o.smartcase     =   true
-vim.o.tabstop       =   4
-vim.o.softtabstop   =   4
-vim.o.shiftwidth    =   4
-vim.o.textwidth     =   79
 vim.o.expandtab     =   true
 vim.o.autoindent    =   true
 vim.o.showmatch     =   true
-vim.o.mat           =   2
 vim.o.hidden        =   true
 vim.o.termguicolors =   true
 vim.o.splitright    =   true
 vim.o.splitbellow   =   true
+
+-- numbers --
+vim.o.mat           =   2
+vim.o.tabstop       =   4
+vim.o.softtabstop   =   4
+vim.o.shiftwidth    =   4
+vim.o.textwidth     =   79
+vim.o.scrolloff     =   8
+
+-- strings --
 vim.o.signcolumn    =   "yes"
 vim.o.clipboard     =   "unnamed,unnamedplus"
-vim.o.scrolloff     =   8
 vim.o.colorcolumn   =   "80"
