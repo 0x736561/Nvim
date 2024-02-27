@@ -11,18 +11,25 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-    -- plugins --
-  "folke/which-key.nvim",
-  "nvim-lua/plenary.nvim",
-  "nvim-telescope/telescope.nvim",
-  "sheerun/vim-polyglot",
-  "ap/vim-css-color",
-  {'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
-  },
+    
+    ---- Vimscript ---- 
+    "sheerun/vim-polyglot",
+    "ap/vim-css-color",
 
-    -- colorschemes --
-  "morhetz/gruvbox",
-  "sainnhe/vim-color-forest-night",
-  "roosta/srcery",
+    ---- Lua ----
+    "prichrd/netrw.nvim",
+    "folke/which-key.nvim",
+    "nvim-lua/plenary.nvim",
+    "nvim-telescope/telescope.nvim",
+    { 'nvim-lualine/lualine.nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' }},
+    { 'nvimdev/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+        require('dashboard').setup{}
+      end,
+      dependencies = { { 'nvim-tree/nvim-web-devicons' }}},
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
+    "neanias/everforest-nvim",    
 })
