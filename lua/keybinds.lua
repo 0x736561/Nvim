@@ -3,6 +3,7 @@ local wk = require("which-key")
 wk.register({
     name = "Leader",
     a = {"<cmd>bp<cr>", "Buffer anterior"},
+    d = {"<cmd>Dashboard<cr>", "Abrir Dashboard"},
     p = {"<cmd>bn<cr>", "Próximo buffer"},
     c = {"<cmd>bdel<cr>", "Fechar buffer"},
     v = {"<cmd>vs<cr>", "Split vertical"},
@@ -20,7 +21,5 @@ wk.register({
     g = {
         name = "Git",
         p = {"<cmd>Gitsigns preview_hunk<cr>", "Preview Hunk"},
-        b = {"<cmd>Git blame<cr>", "Blame"},
-        g = {"<cmd>Git ", "Git commands"},
     },
 }, { prefix = "<leader>" })
