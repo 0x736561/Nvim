@@ -5,19 +5,14 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "--branch=stable", 
     lazypath,
   })
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-    
-    ---- Vimscript ---- 
-    "sheerun/vim-polyglot",
-    "tpope/vim-fugitive",
-    "ap/vim-css-color",
 
-    ---- Lua ----
+    'nvim-treesitter/nvim-treesitter',
     "prichrd/netrw.nvim",
     "folke/which-key.nvim",
     "nvim-lua/plenary.nvim",
@@ -49,7 +44,8 @@ require("lazy").setup({
             'smoka7/hydra.nvim',
         },
         opts = {},
-        cmd = { 'MCstart', 'MCvisual', 'MCclear', 'MCpattern', 'MCvisualPattern', 'MCunderCursor' },
+        cmd = { 'MCstart', 'MCvisual', 'MCclear', 'MCpattern', 
+                'MCvisualPattern', 'MCunderCursor' },
         keys = {
                 {
                     mode = { 'v', 'n' },
@@ -61,10 +57,7 @@ require("lazy").setup({
     },
 
     -- Temas --
-    { 
-        "catppuccin/nvim", 
-        name = "catppuccin" 
-    },
+    { "catppuccin/nvim", name = "catppuccin" },
     "ellisonleao/gruvbox.nvim", 
     "neanias/everforest-nvim",    
     "navarasu/onedark.nvim",
