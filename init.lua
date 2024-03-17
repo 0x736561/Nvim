@@ -1,6 +1,7 @@
 require("plugins")
 require("keybinds")
 require("config")
+require("lsp")
 require("theme")
 
 -- Vimscript --

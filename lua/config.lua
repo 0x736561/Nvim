@@ -3,9 +3,10 @@ require("bufferline").setup()
 require("gitsigns").setup()
 require("dashboard").setup { shortcut_type = "number" }
 require("nvim-treesitter.configs").setup {
-    ensure_installed = { 
-        "c", "lua", "vim", "rust", "bash", "markdown", "org", "xml",
-        "html", "css", "javascript", "ini", "toml", "yaml"
+    ensure_installed = {
+        "c", "lua", "vim", "rust", "bash", "markdown", "xml", "css",
+        "html", "javascript", "ini", "toml", "yaml", "hare", "asm",
+        "dockerfile", "python", "go"
     },
     highlight = { enable = true },
 }
@@ -24,25 +25,25 @@ require("themery").setup({
         colorscheme = "gruvbox",
         before = [[ vim.opt.background = "dark" ]],
     },
-    
+
     {
         name = "Gruvbox Light",
         colorscheme = "gruvbox",
         before = [[ vim.opt.background = "light" ]],
     },
-    
+
     {
         name = "Everforest Dark",
         colorscheme = "everforest",
         before = [[ vim.opt.background = "dark" ]],
     },
-    
+
     {
         name = "Everforest Light",
         colorscheme = "everforest",
         before = [[ vim.opt.background = "light" ]],
     },
-    
+
     {
         name = "Onedark",
         colorscheme = "onedark",

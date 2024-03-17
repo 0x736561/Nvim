@@ -5,7 +5,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", 
+    "--branch=stable",
     lazypath,
   })
 end
@@ -13,52 +13,35 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
     'nvim-treesitter/nvim-treesitter',
+    'neovim/nvim-lspconfig',
     "prichrd/netrw.nvim",
     "folke/which-key.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
     "lewis6991/gitsigns.nvim",
     "zaldih/themery.nvim",
-    { 
-        'nvim-lualine/lualine.nvim', 
-        dependencies = { 
-            'nvim-tree/nvim-web-devicons' 
-        }
-    },
-    { 
-        'akinsho/bufferline.nvim', 
-        version = "*", 
-        dependencies = 'nvim-tree/nvim-web-devicons'
-    },
-    { 
-        'nvimdev/dashboard-nvim', 
-        event = 'VimEnter', 
-        dependencies = { 
-            { 'nvim-tree/nvim-web-devicons' }
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
         }
     },
     {
-        "smoka7/multicursors.nvim",
-        event = "VeryLazy",
+        'akinsho/bufferline.nvim',
+        version = "*",
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+    {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
         dependencies = {
-            'smoka7/hydra.nvim',
-        },
-        opts = {},
-        cmd = { 'MCstart', 'MCvisual', 'MCclear', 'MCpattern', 
-                'MCvisualPattern', 'MCunderCursor' },
-        keys = {
-                {
-                    mode = { 'v', 'n' },
-                    '<Leader>x',
-                    '<cmd>MCstart<cr>',
-                    desc = 'Create a selection for selected text or word under the cursor',
-                },
-            },
+            { 'nvim-tree/nvim-web-devicons' }
+        }
     },
 
     -- Temas --
     { "catppuccin/nvim", name = "catppuccin" },
-    "ellisonleao/gruvbox.nvim", 
-    "neanias/everforest-nvim",    
+    "ellisonleao/gruvbox.nvim",
+    "neanias/everforest-nvim",
     "navarasu/onedark.nvim",
 })
