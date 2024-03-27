@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
     'nvim-treesitter/nvim-treesitter',
-    'EdenEast/nightfox.nvim',
     "prichrd/netrw.nvim",
     "folke/which-key.nvim",
     "nvim-lua/plenary.nvim",

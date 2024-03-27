@@ -74,49 +74,7 @@ require("themery").setup({
         before = [[ vim.opt.background = "light" ]],
     },
 
-    {
-        name = "Carbonfox",
-        colorscheme = "carbonfox",
-        before = [[ vim.opt.background = "dark" ]],
     },
-
-    {
-        name = "Dawnfox",
-        colorscheme = "dawnfox",
-        before = [[ vim.opt.background = "light" ]],
-    },
-
-    {
-        name = "Dayfox",
-        colorscheme = "dayfox",
-        before = [[ vim.opt.background = "light" ]],
-    },
-
-    {
-        name = "Duskfox",
-        colorscheme = "duskfox",
-        before = [[ vim.opt.background = "dark" ]],
-    },
-
-    {
-        name = "Nightfox",
-        colorscheme = "nightfox",
-        before = [[ vim.opt.background = "dark" ]],
-    },
-
-    {
-        name = "Nordfox",
-        colorscheme = "nordfox",
-        before = [[ vim.opt.background = "dark" ]],
-    },
-
-    {
-        name = "Terafox",
-        colorscheme = "terafox",
-        before = [[ vim.opt.background = "dark" ]],
-    },
-    },
-
     themeConfigFile = "~/.config/nvim/lua/theme.lua",
     livePreview = true,
 })
