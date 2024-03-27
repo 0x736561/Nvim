@@ -1,14 +1,13 @@
 require("plugins")
 require("keybinds")
 require("config")
-require("lsp")
 require("theme")
 
 -- Vimscript --
 vim.cmd([[
     let g:netrw_banner = 0
-    let g:netrw_browse_split = 4
     let g:netrw_winsize = 20
+    let g:netrw_browse_split = 5
     set wildignore+=blue.vim,darkblue.vim,default.vim,delek.vim,desert.vim,
       \elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,
       \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,

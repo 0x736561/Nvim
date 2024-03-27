@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
     'nvim-treesitter/nvim-treesitter',
-    'neovim/nvim-lspconfig',
+--    'neovim/nvim-lspconfig',
     "prichrd/netrw.nvim",
     "folke/which-key.nvim",
     "nvim-lua/plenary.nvim",
