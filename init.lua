@@ -6,8 +6,16 @@ require("theme")
 -- Vimscript --
 vim.cmd([[
     let g:netrw_banner = 0
-    let g:netrw_winsize = 20
+    let g:netrw_winsize = 50
     let g:netrw_browse_split = 5
+    map <up> <nop>
+    map <down> <nop>
+    map <left> <nop>
+    map <right> <nop>
+    imap <up> <nop>
+    imap <down> <nop>
+    imap <left> <nop>
+    imap <right> <nop>
     set wildignore+=blue.vim,darkblue.vim,default.vim,delek.vim,desert.vim,
       \elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,
       \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,

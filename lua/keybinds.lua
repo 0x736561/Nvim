@@ -8,7 +8,7 @@ wk.register({
     c = {"<cmd>bdel<cr>", "Fechar buffer"},
     v = {"<cmd>vs<cr>", "Split vertical"},
     m = {"<cmd>sp<cr>", "Split horizontal"},
-    n = {"<cmd>Vexplore<cr>", "Explorador de arquivos"},
+    n = {"<cmd>Explore<cr>", "Explorador de arquivos"},
     s = {"<cmd>write<cr>", "Salvar"},
     q = {"<cmd>quit<cr>", "Fechar janela"},
     h = {"<c-w>h", "Janela à esquerda"},
