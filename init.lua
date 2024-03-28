@@ -5,6 +5,8 @@ vim.cmd([[
     let g:netrw_banner = 0
     let g:netrw_winsize = 50
     let g:netrw_browse_split = 5
+    set listchars=tab:>-,trail:~,extends:>,precedes:<,space:·
+    set list
     map <up> <nop>
     map <down> <nop>
     map <left> <nop>
